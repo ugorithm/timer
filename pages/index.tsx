@@ -12,8 +12,16 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     let interval = setInterval(() => {
-        if (breakTime )
+        clearInterval(interval);
         setSeconds(seconds - 1);
+        
+        if (seconds == 0)
+        {
+            setMinutes(minutes-1);
+            setSeconds(secs);
+        }
+        
+        
 
 
 
