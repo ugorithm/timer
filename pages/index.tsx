@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
         if (seconds == 0) {
           setMinutes(minutes - 1);
-          setSeconds(secs);
+          setSeconds(0);
         }
 
         if (!breakTime && seconds == 0 && minutes == 0) {
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
     }
   }, [minutes, seconds]);
 
-  //button functions has a bug h
+  //button functions has a bug here
   const startfunc = () => {
     setMinutes(24);
     setSeconds(60);
