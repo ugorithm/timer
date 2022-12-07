@@ -44,8 +44,6 @@ const Home: NextPage = () => {
 
     }, 1000);
   }, [minutes, seconds]);
-
-  }
     
   
 
